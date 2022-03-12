@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sansita Swashed', cursive;
+    background-image: url('./imgs/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 500px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    border-width:6px 4px 6px 6px;
+    border-style:double;
+    border-color:purple;
+    box-shadow:2px 2px 4px 2px purple;
+}
+
+.todo-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(90, 4, 124);
+
+}
+
+.todo-form {
+    margin-bottom: 16px;
+}
+
+.todo-input {
+    width: 80%;
+    padding: 7px 15px;
+    outline: none;
+    border: 2px dashed purple;
+    color: purple;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+
+.todo-input:focus {
+    border: 2px dashed green;
+    color: green;
+}
+
+::placeholder {
+    color: purple;
+}
+
+.todo-btn {
+    width: 15%;
+    padding: 7px 15px;
+    border: 2px dashed #fff;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+.todo-btn:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.list-item {
+    padding: 0 12px;
+    border-bottom: 2px solid #790496;
+    color: #790496;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+}
+
+.close-btn {
+    padding: 0 6px;
+    font-size: 25px;
+    border: 2px dashed #fff;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-item:hover {
+    border: 1px deshed red;
+}
+
+.close-btn:hover {
+    background-color: green;
+}
+
+.close {
+    padding: 0 10px;
+    font-size: 25px;
+    border: 2px dashed #fff;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+.close:hover {
+    background-color: red;
+}
