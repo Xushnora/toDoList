@@ -2,13 +2,13 @@ const itemInput = document.querySelector('input[type = "text"]');
 const itemList = document.querySelector('#todoList');
 const form = document.querySelector('.todo-form');
 
-// itemInput.addEventListener("keyup", runEvent);
+itemInput.addEventListener("keyup", runEvent);
 
-// function runEvent(e) {
-//     // console.log("Event type: " + e.type);
+function runEvent(e) {
+    // console.log("Event type: " + e.type);
 
-//     console.log(e.target.value);
-// }
+    console.log(e.target.value);
+}
 
 
 form.addEventListener('submit', addItem);
@@ -18,10 +18,9 @@ function addItem(e) {
 
     let newItem = itemInput.value;
 
-    if (newItem === "") {
+    if (newItem == "") {
         alert("Nimadir yozing !!!");
-    }
-    else {
+    } else {
         let li = document.createElement("li");
         li.className = "list-item";
         li.appendChild(document.createTextNode(newItem));
